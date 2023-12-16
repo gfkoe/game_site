@@ -27,7 +27,11 @@ body {
 }
 
 h1,
-p {
+p,
+a {
   color: #a26632;
 }
 
+.external-sites a {
+  text-decoration: underline;
+}
