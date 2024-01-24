@@ -14,10 +14,9 @@ export default function Home() {
         <h1>
           Written by{" "}
           <Link
-            style={{ color: "#a26632" }}
+            style={{ color: "#bdada0" }}
             className={`link ${pathname === "/about" ? "active" : ""}`}
-            href="/about"
-          >
+            href="/about">
             Gabriel Koeb
           </Link>
         </h1>
