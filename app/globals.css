@@ -32,6 +32,33 @@ a {
   color: #bdada0;
 }
 
+.text {
+  color: #bdada0;
+}
+
+.typewriter p {
+  overflow: hidden; /* Hide the overflow */
+  white-space: nowrap; /* Keep the text on a single line */
+  margin: 0; /* Remove any default margins */
+  padding: 10px 0; /* Add padding */
+  font-size: 20px; /* Set the font size */
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Apply typing animation to each paragraph */
+.typewriter p {
+  animation: typing 3s steps(40, end);
+}
+
 .external-sites a {
   text-decoration: underline;
 }

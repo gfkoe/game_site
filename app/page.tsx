@@ -2,25 +2,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import TypewriterComponent from "./components/TypewriterComponent";
 export default function Home() {
   const pathname = usePathname();
+  const lines = [
+    "Hello There,",
+    "Welcome to Gameboards",
+    "Written by ",
+    <div key="author">
+      Written by <Link href="/about">Gabriel Koeb</Link>
+    </div>,
+    "Click my name above to learn more about me!",
+  ];
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-24">
-      <div className="container flex flex-col items-start">
-        <h1>Hello There</h1>
-        <h1>Welcome to Gameboards</h1>
-        <br />
-        <h1>
-          Written by{" "}
-          <Link
-            style={{ color: "#bdada0" }}
-            className={`link ${pathname === "/about" ? "active" : ""}`}
-            href="/about">
-            Gabriel Koeb
-          </Link>
-        </h1>
-        <h1>Click my name above to learn more about me!</h1>
+      <div className="container flex flex-col items-start typewriter">
+        <TypewriterComponent lines={lines} speed={50} />
       </div>
     </main>
   );
