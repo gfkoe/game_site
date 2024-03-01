@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-24">
       <div className="container flex flex-col items-start">
-        <h1>Hello There</h1>
-        <h1>Welcome to Gameboards</h1>
+        <p>Hello There</p>
+        <p>Welcome to Gameboards</p>
         <br />
-        <h1>
+        <p>
           Written by{" "}
           <Link
             style={{ color: "#bdada0" }}
@@ -19,8 +19,8 @@ export default function Home() {
             href="/about">
             Gabriel Koeb
           </Link>
-        </h1>
-        <h1>Click my name above to learn more about me!</h1>
+        </p>
+        <p>Click my name above to learn more about me!</p>
       </div>
     </main>
   );

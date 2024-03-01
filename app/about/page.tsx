@@ -20,7 +20,7 @@ export default function About() {
         <br />
 
         <div className="container external-sites">
-          <p>Below are some links to my other pages</p>
+          <p>Below are some links to my other pages:</p>
           <a href="https://github.com/gfkoe">Github</a>
           &nbsp;
           <a href="https://linkedin.com/in/gabriel-koeb">Linkedin</a>
