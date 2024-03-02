@@ -28,7 +28,8 @@ body {
 
 h1,
 p,
-a {
+a,
+h2 {
   color: #bdada0;
 }
 
