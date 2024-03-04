@@ -13,11 +13,11 @@ export default function Home() {
             style={{ color: "#bdada0" }}
             className={`link ${pathname === "/about" ? "active" : ""}`}
             href="/about">
-            Gabriel Koeb
+            Gameboards
           </Link>
         </h1>
-        <br />
-        <h2 className="text-center">Click my name to enter</h2>
+        <h2 className="text-center">Written by Gabriel Koeb</h2>
+        <h2 className="text-center">Click above to enter</h2>
       </div>
     </main>
   );
