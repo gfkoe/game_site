@@ -36,8 +36,7 @@ export default function Home() {
               key="link"
               href="/about"
               style={{ color: "#bdada0" }}
-              className={`link ${pathname === "/about" ? "active" : ""}`}
-            >
+              className={`link ${pathname === "/about" ? "active" : ""}`}>
               <Typewriter text="Welcome to Gameboards" speed={50} />
             </Link>
           </h2>
