@@ -26,6 +26,8 @@ export default function About() {
           <a href="https://linkedin.com/in/gabriel-koeb">Linkedin</a>
         </div>
       </div>
+
+      <div className="container flex flex-col items-start"></div>
     </main>
   );
 }
