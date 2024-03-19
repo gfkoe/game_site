@@ -27,7 +27,17 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container flex flex-col items-start"></div>
+      <div className="container flex flex-row items-start">
+        <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
+          <p>Tic-Tac-Toe</p>
+        </div>{" "}
+        <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
+          <p>Game2PH</p>
+        </div>{" "}
+        <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
+          <p>Game3PH</p>
+        </div>
+      </div>
     </main>
   );
 }
