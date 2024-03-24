@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import Image from "next/image";
 export default function About() {
   const pathname = usePathname();
 
@@ -30,6 +30,12 @@ export default function About() {
       <div className="container flex flex-row items-start">
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
           <p>Tic-Tac-Toe</p>
+          <Image
+            src="/tic-tac-toe.png"
+            alt="Tic-Tac-Toe"
+            width={200}
+            height={200}
+          />
         </div>{" "}
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
           <p>Game2PH</p>
