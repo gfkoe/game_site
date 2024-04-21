@@ -32,7 +32,12 @@ a,
 h2 {
   color: #bdada0;
 }
-
+hr {
+  border: 1px solid #bdada0;
+}
+.game-box {
+  border-color: #695a46;
+}
 .external-sites a {
   text-decoration: underline;
 }
