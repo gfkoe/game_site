@@ -25,17 +25,24 @@ export default function About() {
           &nbsp;
           <a href="https://linkedin.com/in/gabriel-koeb">Linkedin</a>
         </div>
+        <br />
       </div>
-
+      <div className="flex flex-col items-center">
+        <p>Below are some games that I have implemented in React!</p>
+      </div>
+      <br />
       <div className="container flex flex-row items-start">
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
           <p>Tic-Tac-Toe</p>
+          <br />
           <Image
+            className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
             src="/tic-tac-toe.png"
             alt="Tic-Tac-Toe"
             width={200}
             height={200}
           />
+          <br />
         </div>{" "}
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
           <p>Game2PH</p>
