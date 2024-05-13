@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Tictactoe from "../../components/Tictactoe";
+import Tictactoe from "components/Tictactoe";
 
 export default function TicTacToe() {
   return (
