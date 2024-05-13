@@ -4,15 +4,13 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 40, 40, 40;
-  --background-end-rgb: 40, 40, 40;
+  --background-start-rgb: 230, 230, 230;
+  --background-end-rgb: 230, 230, 230;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 40, 40, 40;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
@@ -26,12 +24,37 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
 h1,
 p,
-a {
+a,
+h2 {
   color: #bdada0;
 }
-
+hr {
+  border: 1px solid #bdada0;
+}
+.game-box {
+  border-color: #695a46;
+}
 .external-sites a {
   text-decoration: underline;
 }
