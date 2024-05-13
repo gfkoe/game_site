@@ -95,7 +95,7 @@ function Board({
   );
 }
 
-export default function Game() {
+export default function Tictactoe() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
@@ -110,7 +110,7 @@ export default function Game() {
     setCurrentMove(nextMove);
   }
 
-  const moves = history.map((squares, move) => {
+  const moves = history.map((_squares, move) => {
     let description;
     if (move > 0) {
       description = "Go to move #" + move;
@@ -126,7 +126,7 @@ export default function Game() {
 
   return (
     <div className="game">
-      <div className="game-board">
+      <div className="game-board flex flex-col items-center">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">

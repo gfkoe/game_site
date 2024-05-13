@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Tictactoe from "../../components/tictactoe"; // Import the tictactoe component
+import Tictactoe from "../../components/Tictactoe";
 
 export default function TicTacToe() {
   return (
-    <main className="container">
+    <main className="container flex flex-col items-center min-h-screen">
       <Tictactoe /> {/* Use the tictactoe component as a self-closing tag */}
     </main>
   );
