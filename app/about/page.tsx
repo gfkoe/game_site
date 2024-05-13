@@ -35,13 +35,19 @@ export default function About() {
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
           <p>Tic-Tac-Toe</p>
           <br />
-          <Image
+          <Link
+            key="link"
+            href="/games/tic-tac-toe"
             className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
-            src="/tic-tac-toe.png"
-            alt="Tic-Tac-Toe"
-            width={200}
-            height={200}
-          />
+          >
+            <Image
+              className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
+              src="/tic-tac-toe.png"
+              alt="Tic-Tac-Toe"
+              width={200}
+              height={200}
+            />
+          </Link>
           <br />
         </div>{" "}
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
