@@ -14,7 +14,7 @@ export default function About() {
         <br />
         <p>
           I am building this website as a way to explore more about web
-          technoligies, specifically React, TailwindCSS, and Next.JS 14.
+          technologies, specifically React, TailwindCSS, and Next.JS 14.
         </p>
         <br />
         <br />
