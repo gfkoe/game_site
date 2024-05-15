@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Header from "../components/Header";
 export default function About() {
   const pathname = usePathname();
   return (
@@ -38,14 +39,14 @@ export default function About() {
           <Link
             key="link"
             href="/games/tic-tac-toe"
-            className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
-          >
+            className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg">
             <Image
               className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
               src="/tic-tac-toe.png"
               alt="Tic-Tac-Toe"
               width={200}
               height={200}
+              priority={true}
             />
           </Link>
           <br />
