@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between bg-gray-900">
+    <header className="header-component flex items-center justify-between h-12">
       <Link className="flex items-center" href="/about">
         <span>gfkoe</span>
       </Link>

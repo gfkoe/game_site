@@ -29,9 +29,9 @@ export default function Home() {
   }, []);
   return (
     <main className="flex flex-col p-24 items-center justify-center h-screen">
-      <div className="container flex flex-col align-middle items-center justify-center">
+      <div className="typewriter-container flex flex-col items-center">
         {showWelcome && (
-          <h2 className="text-center text-6xl">
+          <div className="text-6xl">
             <Link
               key="link"
               href="/about"
@@ -39,18 +39,18 @@ export default function Home() {
               className={`link ${pathname === "/about" ? "active" : ""}`}>
               <Typewriter text="Welcome to Gameboards" speed={50} />
             </Link>
-          </h2>
+          </div>
         )}
         {showAuthor && (
-          <h2 className="text-center">
+          <div className="">
             <Typewriter text="Written by Gabriel Koeb" speed={50} />
-          </h2>
+          </div>
         )}
 
         {showClick && (
-          <h2 className="text-center">
+          <div className="">
             <Typewriter text="Click above to enter" speed={50} />
-          </h2>
+          </div>
         )}
       </div>
     </main>
