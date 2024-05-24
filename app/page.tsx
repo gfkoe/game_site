@@ -31,18 +31,19 @@ export default function Home() {
     <main className="flex flex-col p-24 items-center justify-center h-screen">
       <div className="typewriter-container flex flex-col items-center">
         {showWelcome && (
-          <div className="text-6xl">
+          <div className="text-6xl flex flex-col items-center">
             <Link
               key="link"
               href="/about"
               style={{ color: "#bdada0" }}
-              className={`link ${pathname === "/about" ? "active" : ""}`}>
+              className={`link ${pathname === "/about" ? "active" : ""}`}
+            >
               <Typewriter text="Welcome to Gameboards" speed={50} />
             </Link>
           </div>
         )}
         {showAuthor && (
-          <div className="">
+          <div className="flex flex-col items-center">
             <Typewriter text="Written by Gabriel Koeb" speed={50} />
           </div>
         )}
