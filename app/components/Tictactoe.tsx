@@ -111,6 +111,10 @@ export default function Tictactoe() {
     setCurrentMove(nextMove);
   }
 
+  function newGame() {
+    setCurrentMove(0);
+    setHistory([Array(9).fill(null)]);
+  }
   const moves = history.map((_squares, move) => {
     let description;
     if (move > 0) {
@@ -132,6 +136,7 @@ export default function Tictactoe() {
       </div>
       <div className="game-info">
         <ol>{moves}</ol>
+        <button onClick={() => newGame()}>New Game</button>
       </div>
     </div>
   );

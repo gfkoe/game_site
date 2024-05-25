@@ -24,10 +24,10 @@ export default function About() {
           <Link
             key="link"
             href="/games/tic-tac-toe"
-            className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
+            className="hover:scale-110 hover:duration-300 duration-300 "
           >
             <Image
-              className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
+              className="hover:scale-110 hover:duration-300 duration-300 "
               src="/tic-tac-toe.png"
               alt="Tic-Tac-Toe"
               width={200}
