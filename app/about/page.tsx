@@ -14,7 +14,7 @@ export default function About() {
           technologies, specifically React, TailwindCSS, and Next.JS 14.
         </p>
         <br />
-        <p>Check out the Games Below! They are implemented using React!</p>
+        <p>Check out the Games Below! They are implemented using React</p>
       </div>
       <br />
       <div className="container flex flex-row items-start">
