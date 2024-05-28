@@ -9,11 +9,11 @@ export default function Header() {
       </Link>
       <div className="flex">
         <a className="flex" href="https://github.com/gfkoe">
-          <span>Github</span>
+          <span>GitHub</span>
         </a>
         &nbsp;
         <a className="flex" href="https://linkedin.com/in/gabriel-koeb">
-          <span>Linkedin</span>
+          <span>LinkedIn</span>
         </a>
         &nbsp;
       </div>

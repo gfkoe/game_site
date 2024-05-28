@@ -24,10 +24,10 @@ export default function About() {
           <Link
             key="link"
             href="/games/tic-tac-toe"
-            className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
+            className="hover:scale-110 hover:duration-300 duration-300"
           >
             <Image
-              className="hover:scale-110 hover:duration-300 duration-300 hover:shadow-lg"
+              className="hover:scale-110 hover:duration-300 duration-300"
               src="/tic-tac-toe.png"
               alt="Tic-Tac-Toe"
               width={200}
@@ -38,7 +38,7 @@ export default function About() {
           <br />
         </div>{" "}
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
-          <p>Game2PH</p>
+          <p>Connect 4</p>
         </div>{" "}
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
           <p>Game3PH</p>
