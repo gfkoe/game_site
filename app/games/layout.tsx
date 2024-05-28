@@ -6,22 +6,19 @@ import Header from "../components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Gameboards",
+  title: "Games",
   description: "A website made by Gabriel Koeb",
 };
 
-export default function RootLayout({
+export default function GamesLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        {children}
-        <hr />
-      </body>
-    </html>
+    <section className={inter.className}>
+      <Header />
+      {children}
+    </section>
   );
 }

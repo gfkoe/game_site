@@ -4,7 +4,7 @@ import Tictactoe from "components/Tictactoe";
 
 export default function TicTacToe() {
   return (
-    <main className="flex flex-col items-center min-h-screen">
+    <main className="flex flex-col items-center min-h-[90vh]">
       <br />
       <Tictactoe /> {/* Use the tictactoe component as a self-closing tag */}
     </main>

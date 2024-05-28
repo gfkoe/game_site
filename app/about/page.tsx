@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function About() {
   const pathname = usePathname();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-12">
+    <main className="flex min-h-[90vh] flex-col items-center justify-start p-12">
       <div className="container flex flex-col items-start">
         <p>My name is Gabriel Koeb, and I am a senior in Computer Science.</p>
         <p>
@@ -24,17 +24,9 @@ export default function About() {
           <Link
             key="link"
             href="/games/tic-tac-toe"
-<<<<<<< HEAD
-            className="hover:scale-110 hover:duration-300 duration-300"
-          >
+            className="hover:scale-110 hover:duration-300 duration-300">
             <Image
               className="hover:scale-110 hover:duration-300 duration-300"
-=======
-            className="hover:scale-110 hover:duration-300 duration-300 "
-          >
-            <Image
-              className="hover:scale-110 hover:duration-300 duration-300 "
->>>>>>> e99c992fba83e355ad555850e0aa6583034d93d9
               src="/tic-tac-toe.png"
               alt="Tic-Tac-Toe"
               width={200}
