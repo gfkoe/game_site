@@ -14,7 +14,7 @@ export default function About() {
           technologies, specifically React, TailwindCSS, and Next.JS 14.
         </p>
         <br />
-        <p>Check out the Games Below! They are implemented using React!</p>
+        <p>Check out the Games Below! They are implemented using React</p>
       </div>
       <br />
       <div className="container flex flex-row items-start">
@@ -24,10 +24,17 @@ export default function About() {
           <Link
             key="link"
             href="/games/tic-tac-toe"
+<<<<<<< HEAD
             className="hover:scale-110 hover:duration-300 duration-300"
           >
             <Image
               className="hover:scale-110 hover:duration-300 duration-300"
+=======
+            className="hover:scale-110 hover:duration-300 duration-300 "
+          >
+            <Image
+              className="hover:scale-110 hover:duration-300 duration-300 "
+>>>>>>> e99c992fba83e355ad555850e0aa6583034d93d9
               src="/tic-tac-toe.png"
               alt="Tic-Tac-Toe"
               width={200}
