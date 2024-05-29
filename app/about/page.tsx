@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 export default function About() {
-  const pathname = usePathname();
   return (
     <main className="flex min-h-[90vh] flex-col items-center justify-start p-12">
       <div className="container flex flex-col items-start">
@@ -24,7 +23,8 @@ export default function About() {
           <Link
             key="link"
             href="/games/tic-tac-toe"
-            className="hover:scale-110 hover:duration-300 duration-300">
+            className="hover:scale-110 hover:duration-300 duration-300"
+          >
             <Image
               className="hover:scale-110 hover:duration-300 duration-300"
               src="/tic-tac-toe.png"
