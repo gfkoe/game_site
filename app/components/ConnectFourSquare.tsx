@@ -26,7 +26,7 @@ export default function ConnectFourSquare({
   }
   function changeTurn(): void {
     let tempBoard: string[][] = [...board];
-    for (let i = 5; i >= 0, --i) {}
+    for (let i = 5; i >= 0; --i) {}
   }
   return <div></div>;
 }
