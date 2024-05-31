@@ -1,3 +1,9 @@
+# Welcome to Gameboards!
+
+You can access the site online at https://game-site-alpha-eight.vercel.app/
+
+## Below you will find some general information about NextJS apps:
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
