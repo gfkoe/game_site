@@ -1,6 +1,5 @@
 # Welcome to Gameboards!
-
-You can access the site online at https://game-site-alpha-eight.vercel.app/
+While very much still a work in progress, you can access the site online at https://game-site-alpha-eight.vercel.app/
 
 ## Below you will find some general information about NextJS apps:
 
