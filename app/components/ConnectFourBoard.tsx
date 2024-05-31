@@ -33,5 +33,12 @@ export default function ConnectFourBoard() {
       );
     });
   });
-  return <div className="flex items-center justify-center">{gameBoard}</div>;
+  return (
+    <div>
+      game here:
+      <div className="flex items-center justify-center text-center cf-Container">
+        {gameBoard}
+      </div>
+    </div>
+  );
 }

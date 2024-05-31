@@ -1,32 +1,23 @@
 import React from "react";
-
-export default function ConnectFourSquare({
-  setBoard,
-  i,
-  j,
-  currentPlayer,
-  setCurrentPlayer,
-  board,
-  setIsWinner,
-  isWinner,
-}: {
+interface squareProps {
   setBoard: any;
   i: number;
   j: number;
   currentPlayer: string;
   setCurrentPlayer: any;
-  board: any;
+  board: string[][];
   setIsWinner: any;
   isWinner: boolean;
-}) {
+}
+export default function ConnectFourSquare(props: squareProps) {
   function handleClick(): void {
-    if (!isWinner) {
+    if (!props.isWinner) {
       changeTurn();
     }
   }
   function changeTurn(): void {
-    let tempBoard: string[][] = [...board];
+    let tempBoard: string[][] = [...props.board];
     for (let i = 5; i >= 0; --i) {}
   }
-  return <div></div>;
+  return <div>test</div>;
 }
