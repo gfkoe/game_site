@@ -38,6 +38,14 @@ export default function About() {
         </div>{" "}
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
           <p>Connect 4</p>
+          <br />
+          <Link
+            key="link"
+            href="/games/connect-4"
+            className="hover:scale-110 hover:duration-300 duration-300"
+          >
+            <p>Click here to go to Connect-4!</p>
+          </Link>
         </div>{" "}
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
           <p>Game3PH</p>
