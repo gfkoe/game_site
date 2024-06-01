@@ -15,9 +15,26 @@ export default function ConnectFourSquare(props: squareProps) {
       changeTurn();
     }
   }
+  function checkWinner(row: number, col: number, board: string[][]) : void {
+    throw new Error("Function not implemented.");
+  }
   function changeTurn(): void {
     let tempBoard: string[][] = [...props.board];
-    for (let i = 5; i >= 0; --i) {}
+    for (let i = 5; i >= 0; --i) {
+      if (props.board[i][props.j] === "") {
+        tempBoard[i][props.j] = props.currentPlayer;
+        props.setBoard(tempBoard);
+        if (props.currentPlayer === "X") {
+          props.setCurrentPlayer("O");
+        } else {
+          props.setCurrentPlayer("X");
+        }
+        //add check for winner here
+        checkWinner(i, props.j, tempBoard);
+        return;
+      }
+    }
   }
+
   return <div>test</div>;
 }
