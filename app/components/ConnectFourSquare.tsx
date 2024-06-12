@@ -1,4 +1,5 @@
 import React from "react";
+//TODO: Refactor this to not copy code, possibly new win condition check?
 interface squareProps {
   setBoard: any;
   i: number;

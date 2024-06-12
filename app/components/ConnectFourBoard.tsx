@@ -34,6 +34,7 @@ export default function ConnectFourBoard() {
     });
   });
   return (
+    //TODO: Refactor this to not copy code
     <div className="main-Page-Container">
       <br />
       <div className="player-container">
