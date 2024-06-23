@@ -13,16 +13,16 @@ export default function Home() {
     const welcomeTimeout = setTimeout(() => {
       setShowWelcome(true);
     }, 1000);
-    const authorTimeout = setTimeout(() => {
-      setShowAuthor(true);
-    }, 3000);
+    //    const authorTimeout = setTimeout(() => {
+    //      setShowAuthor(true);
+    //    }, 3000);
     const clickTimeout = setTimeout(() => {
       setShowClick(true);
-    }, 5000);
+    }, 3000);
 
     return () => {
       clearTimeout(welcomeTimeout);
-      clearTimeout(authorTimeout);
+      //     clearTimeout(authorTimeout);
       clearTimeout(clickTimeout);
     };
   }, []);
@@ -41,11 +41,11 @@ export default function Home() {
             </Link>
           </div>
         )}
-        {showAuthor && (
+        {/* {showAuthor && (
           <div className="flex flex-col items-center">
             <Typewriter text="Written by Gabriel Koeb" speed={50} />
-          </div>
-        )}
+         </div>
+        )} */}
 
         {showClick && (
           <div className="">
