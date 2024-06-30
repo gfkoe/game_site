@@ -48,14 +48,14 @@ export default function About() {
           </Link>
         </div>{" "}
         <div className="container flex flex-col items-center rounded-lg bg-inherit w-2/6 h-2/6 border-2 game-box">
-          <p>Conway's Game of Life</p>
+          <p>Conway&#39s Game of Life</p>
           <br />
           <Link
             key="link"
             href="/games/game-of-life"
             className="hover:scale-110 hover:duration-300 duration-300"
           >
-            <p>Click here to go to Conway's Game of Life!</p>
+            <p>Click here to go to Conway&#39s Game of Life!</p>
           </Link>
         </div>
       </div>
