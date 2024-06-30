@@ -1,5 +1,5 @@
 import React from "react";
-//TODO: Refactor this to not copy code, possibly new win condition check?
+//TODO: possibly new win condition check?
 interface squareProps {
   setBoard: any;
   i: number;
@@ -37,7 +37,7 @@ export default function ConnectFourSquare(props: squareProps) {
     col: number,
     checkRow: number,
     checkCol: number,
-    board: string[][]
+    board: string[][],
   ) {
     let newCount = 1;
     if (count === 4) {
@@ -60,7 +60,7 @@ export default function ConnectFourSquare(props: squareProps) {
     col: number,
     checkRow: number,
     checkCol: number,
-    board: string[][]
+    board: string[][],
   ) {
     if (count === 4) {
       props.setIsWinner(true);
